@@ -31,6 +31,17 @@ const deletarProduto = async (id) =>{
     await fetch(`${url}${id}`, options);
 };
 
+const putProduto = async (produto) => {
+    const options = {
+        method : 'PUT',
+        body: JSON.stringify(produto),
+        headers: {
+            'content-Type': 'application/json'
+        }
+    };
+    await fetch(`${url}${produto.id}`, options);
+};
+
 export{
-    getProdutos, postProduto, deletarProduto
+    getProdutos, postProduto, deletarProduto, putProduto
 };

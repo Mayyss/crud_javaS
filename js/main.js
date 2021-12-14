@@ -2,7 +2,7 @@
 
 import {openModal, closeModal} from './modal.js';
 
-import {getProdutos, postProduto, deletarProduto} from './produtos.js';
+import {getProdutos, postProduto, deletarProduto, putProduto} from './produtos.js';
 
 import {imagemPreview} from './imagePreview.js';
 
